@@ -1,11 +1,11 @@
 version: 2.1
 workflows:
  test-deploy:
-   - test:
+  - test:
 jobs:
   test:
     docker:
-      - image: cimg/base:2021.05
+     - image: cimg/base:2021.05
     steps:
       - checkout
       # Whatever you want to do

@@ -1,13 +1,7 @@
 version: 2.1
+orbs:
+    hello: circleci/hello-build@0.0.5
 workflows:
- test-deploy:
--test:
-jobs:
-  test:
-    docker:
-     - image: cimg/base:2021.05
-    steps:
-      - checkout
-      # Whatever you want to do
-      - run: sudo yum update && sudo yum  install -y wget
-      
+    "Hello Workflow":
+        jobs:
+          - hello/hello-build

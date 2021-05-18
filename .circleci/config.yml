@@ -9,5 +9,5 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - run: sudo yum update && sudo yum  install -y httpd*
+      - run: sudo yum update && sudo yum  install -y wget
       
